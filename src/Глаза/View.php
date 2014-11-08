@@ -37,7 +37,7 @@ class View implements ViewInterface
 		$variables = [];
 	
 		foreach( $this->data['object'] as $name => $view ) $variables[$name] = $view;
-		foreach( $this->data['string'] as $name => $string ) $variables[$name] = (string)$string;
+		foreach( $this->data['string'] as $name => $string ) $variables[$name] = $string;
 		
 		extract($variables, EXTR_REFS);
 		ob_start();
