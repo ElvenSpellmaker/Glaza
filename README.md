@@ -1,4 +1,5 @@
-#Глаза (Glaza)
+Глаза (Glaza)
+=============
 
 Глаза is a *very* basic view handler and parser for PHP views.
 
@@ -6,7 +7,6 @@
 Installing can be done through Composer:
 
 `composer require ElvenSpellmaker/Glaza`
-When asked which version to use, for now please use `dev-master`.
 
 If you don't want to use Composer, then clone the repo and include the provided AutoLoader:
 ```php`
@@ -44,8 +44,7 @@ Views can contain other views too:
 $view->set('bar', new View( 'NestedView' ) );
 ```
 
-###Rendering A View
-
+### Rendering A View
 In `ViewTestHtml.php` is the code:
 ```php
 <html>
@@ -68,7 +67,7 @@ Using the above exmaple the output is shown below:
 </html>
 ```
 
-###Automatic Escaping (Sanitisation)
+### Automatic Escaping (Sanitisation)
 Consider the following code:
 ```php`
 $view->set('foo', '<b>Not Bold</b>');
